@@ -2,9 +2,13 @@ import smtplib
 import ssl
 import mimetypes
 from email.message import EmailMessage
+from dotenv import load_dotenv
+import os 
+
+load_dotenv()
 
 # 1 - Dados do E-mail
-password = open('senha', 'r').read()
+password = os.getenv("PASSWORD")
 from_email = "mc2798353@gmail.com"
 to_email = "mc2798353@gmail.com"
 subject = "Automação Planilha"
