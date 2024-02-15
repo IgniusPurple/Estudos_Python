@@ -13,7 +13,6 @@ message = "A melhor forma de prever o futuro é criá-lo".encode()
 algorithm.update(message)
 print(algorithm.hexdigest())
 
-
 # 4 -  Utilizando o MD5
 md5 = hashlib.md5()
 md5.update(message)
